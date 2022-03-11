@@ -5,12 +5,12 @@ from flask import render_template
 
 @app.route('/')
 def home():
-    print('hello again')
-    x = 5
+    print('Welcome to Car & Truck Co.')
+    x = 'Car & Truck Co.'
     print(f'X has a value of {x}.')
     return render_template('index.html')
 
-@app.route('/mcfc')
+@app.route('/mechanics')
 def mechanics_info():
     x = 'mechanics'
     print(f'X has value {x}.')
