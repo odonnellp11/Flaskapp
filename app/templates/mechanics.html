@@ -3,7 +3,13 @@
 
 
 {% block leftcol %}
-<h1>Welcome to Car & Truck Co. Service Dept.</h1>
+<h1>{{ headline }}</h1>
+<h2>Service Techs:</h2>
+<ul>
+    {% for name in mechanics%}
+        <li>{{ name }}</li>
+    {% endfor %}
+</ul>
 {% endblock leftcol %}
 
 {% block rightcol %}
